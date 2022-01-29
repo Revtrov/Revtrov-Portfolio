@@ -195,8 +195,12 @@ let loading = setInterval(() => {
     document.getElementById("progress").style.width = progress + "%";
     if (progress >= 100 || document.readyState === 'complete') {
         document.getElementById("progress").style.width = "100%";
-        clearInterval(loading);
-        document.getElementById("loadingBarBackground").style.opacity = "0%";
-        document.getElementById("app").style.opacity = "100%";
+        setTimeout(() => {
+            clearInterval(loading);
+            document.getElementById("loadingBarBackground").style.opacity = "0%";
+            document.getElementById("app").style.opacity = "100%";
+            document.getElementById("backButton").style.opacity = "0";
+            document.getElementById("backButton").style.userSelect = "none";
+        }, 100)
     }
 })

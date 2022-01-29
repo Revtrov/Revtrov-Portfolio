@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .topBarElement#projects:after {
+            transition: transform 500ms ease;
+            transform: scaleX(1)
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topBar">
+        <div id="logo">
+        </div>
+        <div></div>
+        <div class="topBarElement" id="home"><a href="index.html">Home</a></div>
+        <div class="topBarElement" id="projects"><a href="projects.html">Projects</a></div>
+        <div class="topBarElement" id="about"><a href="about.html">About</a></div>
+        <div class="topBarElement" id="contact"><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="card-container">
+
+        <div class="card" id="card-left">
+            <div id="zSpinL" class="zSpin">
+                <div id="ySpinL" class="ySpin">
+                    <div id="front-left" class="front">
+                        <div class="card-content">
+                            <h2 class="card-title">Practice Typing</h2>
+                            <p class="card-body">
+                                Practice typing by typing random quotes!
+                            </p>
+                            <a tabindex="1" id="left-button" class="button">Try me</a>
+                        </div>
+                    </div>
+                    <div class="back" id="back-left"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card-middle">
+            <div id="zSpinM" class="zSpin">
+                <div id="ySpinM" class="ySpin">
+                    <div id="front-middle" class="front">
+                        <div class="card-content">
+                            <h2 class="card-title">Roll Dice</h2>
+                            <p class="card-body">
+                                Roll a dice with the press of a button!
+                            </p>
+                            <a tabindex="2" id="middle-button" class="button">Try me</a>
+                        </div>
+                    </div>
+                    <div class="back" id="back-middle"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="card-right">
+            <div id="zSpinR" class="zSpin">
+                <div id="ySpinR" class="ySpin">
+                    <div id="front-right" class="front">
+                        <div class="card-content">
+                            <h2 class="card-title">Coola Cansat</h2>
+                            <p class="card-body">
+                                Take a look at the Coola Cansat Project!
+                            </p>
+                            <a tabindex="3" id="right-button" class="button">Try me</a>
+                        </div>
+                    </div>
+                    <div class="back" id="back-right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="Email">RevtrovBusiness@gmail.com</div>
+        <div id="GitHub"><a href="https://github.com/Revtrov/">github.com/Revtrov/</a></div>
+        <div id="Updated">20th Jan 2021</div>
+    </div>
+    <script src="projectScript.js"></script>
+</body>
+
+</html>

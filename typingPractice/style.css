@@ -12,6 +12,10 @@
     margin-top: 20px;
 }
 
+#backButton {
+    color: white;
+}
+
 #loadingBarBackground {
     position: fixed;
     top: calc(50% - 4px);
