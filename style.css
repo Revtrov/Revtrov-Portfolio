@@ -49,7 +49,7 @@ a:hover:not(.topBarElement>a) {
     width: 33.3333333vw;
     height: 100%;
     color: white;
-    font-size: 2vh;
+    font-size: 100%;
 }
 
 #topBar {
@@ -444,12 +444,13 @@ transition-delay: .01ms!important
         height: 75vh;
         position: relative;
         top: 30%;
+        text-align: center;
     }
     .card:focus-within .card-content>:not(.card-title) {
         transition-delay: 0
     }
     .card-title {
-        width: 120%!important;
+        width: 100%!important;
         position: relative
     }
     .card-body {
@@ -459,12 +460,13 @@ transition-delay: .01ms!important
         content: "";
         position: absolute;
         height: 4px;
-        width: 200%;
-        left: -100px;
+        width: calc(100% + var(--padding));
+        left: 0%;
         bottom: -2px;
         background: var(--clr-accent-100);
-        transform-origin: left;
-        transition: transform 500ms ease
+        transform-origin: center;
+        transition: transform 2000ms ease;
+        transform: scaleX(0.5);
     }
     .card:hover .card-title::after,
     .card:focus-within .card-title::after {
@@ -478,6 +480,9 @@ transition-delay: .01ms!important
         background: var(--clr-accent-100);
         padding: .5em 1.25em;
         border-radius: .25em
+    }
+    #footer>div {
+        font-size: 50%!important;
     }
     .button:hover,
     .button:focus {
