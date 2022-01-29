@@ -24,14 +24,33 @@ body {
     overflow-x: hidden !important
 }
 
+#egg {
+    opacity: 0;
+    pointer-events: none
+}
+
 #footer {
-    display: flex;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(3, 33.333%) !important;
     width: 100vw;
     height: 8vh;
     line-height: 8vh;
     position: fixed;
     bottom: 0;
     left: calc(50%-50vw);
+}
+
+#Email {
+    grid-column: 1;
+}
+
+#GitHub {
+    grid-column: 2;
+}
+
+#Updated {
+    grid-column: 3;
 }
 
 a {
@@ -44,12 +63,20 @@ a:hover:not(.topBarElement>a) {
     text-decoration: none;
 }
 
+#mobileNavMenu {
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+}
+
 #footer>div {
+    position: relative;
     text-align: center;
     width: 33.3333333vw;
     height: 100%;
     color: white;
     font-size: 100%;
+    user-select: none;
 }
 
 #topBar {
@@ -62,6 +89,7 @@ a:hover:not(.topBarElement>a) {
     display: grid;
     grid-template-rows: 8vh;
     grid-template-columns: 8vh calc(60vw - 8vh) 10vw 10vw 10vw 10vw;
+    z-index: 1000;
 }
 
 #logo {
@@ -69,6 +97,7 @@ a:hover:not(.topBarElement>a) {
     background-size: cover;
     transform: scale(5);
     margin: 10px;
+    z-index: 1000;
 }
 
 @media (min-width: 985px) {
@@ -234,6 +263,11 @@ a:hover:not(.topBarElement>a) {
     .button:focus {
         background-color: var(--clr-neutral-100)
     }
+    #footer>div>a>img {
+        opacity: 1 !important;
+        height: 6vh;
+        width: auto;
+    }
     @media (hover) {
         .card-content {
             transform: translateY(130%);
@@ -360,6 +394,21 @@ transition-delay: .01ms!important
         min-height: 100vh;
         height: inherit
     }
+    #mobileNavMenu {
+        /*background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);*/
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        backdrop-filter: blur(5px);
+        height: 100vh;
+        width: 100vw;
+        left: -100vw;
+        top: 0%;
+        transition: left ease 300ms;
+        font-size: 130%;
+        text-align: center;
+        line-height: 20vh;
+        z-index: 99;
+    }
     .topBarElement {
         opacity: 0;
         z-index: -1;
@@ -369,7 +418,7 @@ transition-delay: .01ms!important
         position: relative;
         height: 20px;
         width: auto;
-        top: calc(50% - 5px)
+        top: calc(-100%)
     }
     .topBarElement::after {
         content: "";
@@ -483,6 +532,23 @@ transition-delay: .01ms!important
     }
     #footer>div {
         font-size: 50%!important;
+        height: 8vh;
+        width: 100%;
+        transition: height 300ms ease;
+    }
+    #footer>div>a>img {
+        height: 6vh;
+        width: auto;
+        transition: height ease 300ms, position 300ms ease, width 300ms ease, background-color ease 200ms;
+    }
+    #footer>div>a>img:hover {
+        height: 7vh;
+    }
+    .footerDesktop {
+        opacity: 0;
+        user-select: none;
+        display: none;
+        pointer-events: none;
     }
     .button:hover,
     .button:focus {

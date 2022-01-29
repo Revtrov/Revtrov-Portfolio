@@ -16,6 +16,24 @@
 </head>
 
 <body>
+    <div id="mobileNavMenu">
+        <a href="index.html">Home</a>
+        <br>
+        <a href="projects.html">Projects</a>
+        <br>
+        <a href="about.html">About</a>
+        <br>
+        <a href="contact.html">Contact</a>
+        <div id="footer">
+            <div id="Email">
+                <a id="emailLink" href="#"><img src="images/gmail.png" alt="gmail"></a>
+            </div>
+            <div id="GitHub">
+                <a id="githubLink" href="#"><img src="images/github.png" alt="github"></a>
+            </div>
+            <div id="Updated">29th Jan 2021</div>
+        </div>
+    </div>
     <div id="topBar">
         <div id="logo">
         </div>
@@ -76,13 +94,21 @@
             </div>
         </div>
     </div>
-    <div id="footer">
-        <div id="Email">RevtrovBusiness@gmail.com</div>
-        <div id="GitHub"><a href="https://github.com/Revtrov/">github.com/Revtrov/</a></div>
-        <div id="Updated">29th Jan 2021</div>
+    <div id="footer" class="footerDesktop">
+        <div id="Email">
+            <a id="emailLink" href="#">
+                <a id="emailLinkD" href="#"><img src="images/gmail.png" alt="gmail"></a>
+            </a>
+        </div>
+        <div id="GitHub">
+            <a id="githubLinkD" href="#"><img src="images/github.png" alt="github"></a>
+        </div>
+        <div id="Updated" class="egg" style="user-select: none">29th Jan 2021</div>
     </div>
     <script src="projectScript.js"></script>
     <script src="footer.js"></script>
+    <script src="mobileNav.js"></script>
+    <button id="egg">できる</button>
 </body>
 
 </html>
