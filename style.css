@@ -197,7 +197,7 @@ a:hover:not(.topBarElement>a) {
         background: url(images/coolacansat.png)center top
     }
     #front-middle {
-        background: url(dice/rollDice.png)center top
+        background: url(images/solarSystem.png)center top
     }
     #card-left .card-title,
     #card-right .card-title {
@@ -365,7 +365,8 @@ transition-delay: .01ms!important
         background: #002136 !important
     }
     #back-middle {
-        background: green
+        background: url(images/solarSystemBack.png);
+        background-position: center center;
     }
     #back-right {
         background: rgb(51, 51, 51);
@@ -479,7 +480,7 @@ transition-delay: .01ms!important
         background-size: cover
     }
     #front-middle {
-        background: url(dice/rollDice.png)center top;
+        background: url(images/solarSystem.png)center top;
         background-size: cover
     }
     #card-left .card-title,

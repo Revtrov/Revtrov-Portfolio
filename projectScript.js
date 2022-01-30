@@ -47,7 +47,7 @@ document.getElementById("middle-button").addEventListener("click", () => {
         document.getElementById("card-middle").style.transform = "scale(1)"
     }
     setTimeout(function() {
-        window.location = "/dice/index.html";
+        window.location = "/solarSystem/index.html";
     }, 400)
 
 })
@@ -102,7 +102,7 @@ document.getElementById("middle-button").addEventListener("keydown", (e) => {
             document.getElementById("card-middle").style.transform = "scale(1)"
         }
         setTimeout(function() {
-            window.location = "/dice/index.html";
+            window.location = "/solarSystem/index.html";
         }, 400)
     }
 })
