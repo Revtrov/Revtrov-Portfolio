@@ -61,7 +61,7 @@ sky.material.side = THREE.DoubleSide;
 scene.add(sky);
 const sunTexture = new THREE.TextureLoader().load("images/sun.jpg");
 const sun = new THREE.Mesh(
-    new THREE.SphereGeometry(1392000 / 2, 320, 320),
+    new THREE.SphereGeometry(696340, 320, 320),
     new THREE.MeshBasicMaterial({ map: sunTexture, transparent: false }),
 );
 scene.add(sun);

@@ -101,6 +101,70 @@ a:hover:not(.topBarElement>a) {
 }
 
 @media (min-width: 985px) {
+    body {
+        overflow: hidden
+    }
+    div#mainBody {
+        text-align: center;
+    }
+    div#mainBody>canvas {
+        width: 80%;
+    }
+    #title {
+        height: 48px;
+        line-height: 400px;
+        opacity: 1;
+        font: monospace;
+        font-size: 48px;
+        font-weight: bold;
+        color: white;
+        animation: 2s ease-in-out 0s 1 slideUpFromBottom;
+    }
+    .about {
+        position: fixed;
+        line-height: 0 !important;
+        top: 20%;
+        width: 30%;
+        left: calc(50% - 15%)
+    }
+    #para {
+        line-height: 38px !important;
+        position: fixed;
+        top: calc(20% + 48px);
+        width: 75%;
+        left: calc(50% - 37.5%);
+        height: 48px;
+        line-height: 400px;
+        opacity: 1;
+        font: monospace;
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+        animation: 2s ease-in-out 0s 1 slideUpFromBottom;
+    }
+    #comp {
+        animation: 2s ease-in-out 0s 1 slideUpFromBottomImg;
+    }
+    @keyframes slideUpFromBottomImg {
+        0% {
+            transform: translateY(10%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    @keyframes slideUpFromBottom {
+        0% {
+            transform: translateY(80%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
     .topBarElement {
         text-align: center;
         user-select: none;

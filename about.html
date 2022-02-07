@@ -43,6 +43,25 @@
         <div class="topBarElement" id="about"><a href="about.html">About</a></div>
         <div class="topBarElement" id="contact"><a href="contact.html">Contact</a></div>
     </div>
+    <div id="mainBody">
+        <div id="title" class="about">About Me</div>
+        <div id="para"></div>
+        <img src="images/comp.png" alt="computer" id="comp">
+        <script>
+            let date = Date.now();
+            let date2 = new Date(2005, 04, 18);
+            let mill = date - date2;
+            let sec = mill / 1000;
+            let min = sec / 60;
+            let hour = min / 60;
+            let day = hour / 24;
+            let years = day / 365.25;
+            let age = Math.floor(years);
+            document.getElementById("para").innerHTML =
+                `My name is Ryan McGoldrick. I am student from Sligo currently studying at Coola post primary school. I am currently ${age} years old. I am aiming to study computer science in college.
+            `
+        </script>
+    </div>
     <div id="footer" class="footerDesktop">
         <div id="Email">
             <a id="emailLink" href="#">
