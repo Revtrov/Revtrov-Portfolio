@@ -51,6 +51,24 @@ document.getElementById("middle-button").addEventListener("click", () => {
     }, 400)
 
 })
+document.getElementById("middle-right-button").addEventListener("click", () => {
+
+    if (window.innerWidth > 900) {
+        document.getElementById("ySpinM").style.transform = "rotateY(180deg)";
+        document.getElementById("zSpinM").style.transform = "rotateZ(90deg)";
+        document.getElementById("back-middle").style.width = "100vh";
+        document.getElementById("back-middle").style.height = "200vh";
+        document.getElementById("card-middle").style.position = "fixed";
+        document.getElementById("card-middle").style.top = "50vh";
+        document.getElementById("card-middle").style.left = "75vw";
+        document.getElementById("card-middle").style.zIndex = "5";
+        document.getElementById("card-middle").style.transform = "scale(1)"
+    }
+    setTimeout(function() {
+        window.location = "/circleAnim/index.html";
+    }, 400)
+
+})
 document.getElementById("left-button").addEventListener("keydown", (e) => {
     if (e.key == "Enter") {
         console.log("left button clicked")
